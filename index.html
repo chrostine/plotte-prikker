@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/light.css" />
+  <script type="module"
+    src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/shoelace-autoloader.js"></script>
+  <meta charset="utf-8" />
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.plotSvg.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <div id="nav">
+      <sl-range label="Seed" id="seed" min="0" max="100" value="0" step="1"></sl-range>
+      <sl-range label="Antal" id="antal" min="1" max="25" value="10" step="1"></sl-range>
+      <sl-range label="Rotation" id="loc" min="1" max="200" value="20" step="1"></sl-range>
+      <sl-range label="Størrelse" id="størrelse" min="5" max="100" value="5" step="1"></sl-range>
+      <sl-range label="Hastighed" id="hastighed" min="0.01" max="0.10" value="0.01" step="0.01"></sl-range>
+      <sl-button id="lavNy" variant="primary">Lav ny</sl-button>
+    </div>
+    <div id="main"></div>
+  </div>
+  <script src="sketch.js"></script>
+</body>
+
+</html>

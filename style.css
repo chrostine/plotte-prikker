@@ -1,0 +1,47 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+  background-color: rgb(64, 64, 64);
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+#nav {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  gap: 1rem;
+  padding: 16px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 360px;
+  height: 100vh;
+  background-color: lightgray;
+  z-index: 10;
+}
+
+#nav>* {
+  width: 100%;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0;
+  flex-grow: 1;
+  min-width: 0;
+  height: 90vh;
+  background-color: rgb(64, 64, 64);
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  display: block;
+}
